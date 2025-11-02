@@ -1,0 +1,119 @@
+# ========================================
+# CRITICAL: Environment Variables & Secrets
+# ========================================
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# ========================================
+# Python
+# ========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ========================================
+# Virtual Environments
+# ========================================
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+venv.bak/
+env.bak/
+
+# ========================================
+# IDEs & Editors
+# ========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.vs/
+
+# ========================================
+# Testing & Coverage
+# ========================================
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+
+# ========================================
+# Logs
+# ========================================
+*.log
+logs/
+*.log.*
+
+# ========================================
+# Temporary & Test Files
+# ========================================
+*.tmp
+*.temp
+temp/
+tmp/
+*.pdf
+test_*.pdf
+sample_*.pdf
+example_*.pdf
+
+# ========================================
+# OS Files
+# ========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ========================================
+# Jupyter Notebooks (if you use them)
+# ========================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ========================================
+# Database Files (if any)
+# ========================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ========================================
+# Cache & Config
+# ========================================
+.cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
