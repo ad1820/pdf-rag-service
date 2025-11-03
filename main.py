@@ -1,4 +1,5 @@
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Header, Depends
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import tempfile
 import os
@@ -13,6 +14,17 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = FastAPI(title="PDF Agent API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://pdf-client-service.vercel.app",
+        "https://pdf-server-service.onrender.com",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 vectorstore_cache = {}
 
